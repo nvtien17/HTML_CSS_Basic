@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#main{
+    padding: 10px 100px;
+}
+.header{
+    display: flex;
+    height: 110 px;
+    justify-content: space-between;
+}
+.logo{
+    flex: 1;
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+.firmname{
+    flex: 5;
+    text-align: center;
+    padding-top: 20px;
+}
+.firmname .vie{
+    color: #01a54f;
+    font-size: 24px;
+
+}
+.firmname .eng{
+    color: #99ba13;
+    font-size: 18px;
+}
+.flag-search{
+    flex:2;
+}
+.flag{
+    display: flex;
+    margin-left: 160px;
+}
+.flag img{
+    width: 40px;
+    height: 30px;
+    margin : 10px 0px 10px 10px
+}
+.search input{
+    width: 90%;
+    border-radius: 10px;
+    height: 25px;
+}
+.menulist{
+    display: flex;
+    justify-content: space-between;
+}
+.menuitem{
+    list-style: none;
+    text-align: center;
+    background-color:  #fbfef5;
+    flex:auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+.menuitem:hover{
+    background-color: #00a551;
+    color: white;
+}
+.banner{
+    position: relative;
+    height: 300px;
+}
+.banner img{
+    width: 100%;
+    height: 300px;
+}
+.title{
+    background-color: rgba(20, 6,6,0.3 );
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    padding: 10px;
+    bottom: 50px;
+    color: white;
+}
+.content{
+    display: flex;
+    width: 100%;
+    margin-top:20px;
+}
+.item{
+    flex: 1;
+    margin-left: 10px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.item:first-child{
+    margin-left: 0;
+}
+.item img{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+}
+.button{
+    margin-top: 10px;
+    position: relative;
+}
+
+.button a{
+    border: 1px solid black;
+    padding: 5px;
+    position: absolute;
+    right: 5px;
+    text-decoration: none;
+}
+.button a:hover{
+    border: 1px solid #01a54f;
+    color:#01a54f;
+}
+#footer{
+    background-color:  #00a551;
+    color: white;
+    height: 50px;
+    display: flex;
+    padding: 0 100px;
+    position: relative;
+    justify-content: space-between;
+}
+.text{
+    text-align: center;
+    padding: 15px ;
+}
+.icon{
+    display: flex;
+    line-height: 50px;
+    margin-top: 15px;
+    /* position: absolute;
+    right:100px; */
+
+}
+.icon img{
+    width:30px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+
+
+
