@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+html{
+    font-family: Helvetica,Arial, sans-serif;
+}
+.menu-top{
+    width: 100%;
+    padding-left: 70%;
+}
+.list-menu{
+    display : flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.list-menu .list-item{
+    border-right: 1px solid black;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+.list-menu .list-item2{
+    padding: 0 10px;
+}
+.header .logo{
+    color:rgb(176, 15, 86);
+    margin: 10px 40px;
+}
+.header{
+ display: flex;
+}
+.headbar{
+
+}
+.headbar .phone{
+    background-color: #ccc;
+    color: rgb(176, 15, 86);
+    padding :10px;
+    margin-left: 800px;
+    width:300px;
+    height: auto;
+}
+.entry{
+    border: 1px solid black;
+    width: 250px;
+    margin-left: 500px;
+
+}
+.tool {
+    display : flex;
+    padding: 0;
+    align-items: center;
+    margin-top: 40px;
+}
+.entry i{
+    margin-left: 77px;
+}
+.search{
+    margin-left: 10px;
+}
+.button {
+    background-color:rgb(176, 15, 86) ;
+    color: white;
+    margin-left: 10px;
+    padding: 5px;
+}

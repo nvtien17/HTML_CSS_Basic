@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.menu-top{
+     padding-right: 50px;
+     margin: 15px 0;
+}
+.list-menu{
+    display: flex;
+    justify-content: right;
+}
+.list-item:last-child{
+    border-right: none;
+}
+.list-item{
+    border-right: 1px solid black;
+    list-style: none;
+    padding : 0px 10px;
+}
+.header{
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.header .logo{
+    margin-left: 50px;
+    color:rgb(174, 7, 81);
+    font-weight: 24px;
+}
+.tooler{
+    margin-top: 10px;
+    display: flex;
+}
+.hotline {
+    position: relative;
+    margin-bottom: 35px;
+}
+.hotline p{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #ccc;
+    color:rgb(174, 7, 81);
+    border-radius: 3px;
+    padding: 5px;
+}
+.tool1{
+    margin-left: 3px;
+}
+.tool1.right input {
+    width: 250px;
+    height: 25px;
+}
+.tool1.left select {
+    width: 200px;
+    height: 25px;
+}
+.tooler button{
+    background-color: rgb(174, 7, 81);
+    color : white;
+    border: none;
+    border-radius: 2px;
+    padding: 3px;
+}
+.container{
+    margin:10px 50px;
+}
+.main-menu{
+
+}
+.main-menu-list{
+    display: flex;
+}
+.main-menu-item{
+    list-style: none;
+    background-color: rgb(174, 7, 81);
+    color: white;
+    flex: 1;
+    padding: 5px;
+    text-align: center;
+    margin: 1px;
+    width: auto;
+}
+.content{
+    margin-top: 5px;
+}
+.row1{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.slider{
+    background-image: url(./slider.jpg);
+    background-size:cover;
+    height: 450px;
+    flex:3;
+    border: 1px solid rgb(174, 7, 81);
+}
+.navbar{
+    flex: 1;
+    margin-left: 5px;
+}
+.navsearch{
+    background-color: rgb(88, 41, 61);
+    color: white;
+    padding: 10px;
+    position: relative;
+    height: 107px;
+    border: 1px solid black;
+}
+.navsearch input{
+    width: 100%;
+    margin: 10px 0;
+}
+.navsearch .button{
+    background-color: rgb(174, 7, 81);
+    padding: 5px;
+    width: 30%;
+    position: absolute;
+    right:10px;
+}
+.toolbar{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+.title{
+    background-color: #8E4766;
+    padding : 5px;
+    color: white;
+    display: flex;
+    border-bottom: 1px solid black;
+
+}
+.title-name{
+    border-right: 1px solid white;
+    padding-right: 10px;
+}
+.title-link a{
+    color: white;
+    margin-left: 10px;
+}
+.item-bar{
+    padding: 16px 10px;
+    display: flex;
+}
+.item-bar img{
+    width: 70px;
+    height: 70px;
+}
+.infor{
+    margin-left: 10px;
+}
+.item-name{
+    color: rgb(174, 7, 81);
+}
+.branch{
+    display: flex;
+}
+.branch h4{
+    color: rgb(174, 7, 81);
+}
+.row2 {
+    display: flex;
+    margin-top: 10px;
+}
+.row-item{
+    flex: 1;
+    background-color: rgb(157, 0, 71);
+    padding: 5px;
+    margin-left: 3px;
+}
+.row-item:first-child{
+    margin-left: 0;
+}
+.row-item .title{
+    background-color: rgb(174, 7, 81);
+    width: 100%;
+    border: 1px solid white;
+}
+.main-item{
+    margin-top: 5px;
+    background-image: url(https://nuochoamy.vn/upload/images/nuoc-hoa-cho-nu-7.jpg);
+    background-size:cover;
+    height: 230px;
+    width: 100%;
+}

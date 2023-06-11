@@ -1,0 +1,18 @@
+.content{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+}
+.title{
+    width: 90px;
+}
+.row1{
+    display: flex;
+    margin: 10px;
+}
+.check{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

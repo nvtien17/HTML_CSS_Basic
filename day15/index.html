@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content{
+            margin-left:50%;
+            transform: translateX(-50%);
+            width: 300px;
+        }
+        .row{
+            display: flex;
+            margin:  10px;
+        }
+        .element {
+            width: 120px;
+        }
+        .title{
+            text-align: center;
+        }
+        .button{
+            text-align: center;
+        }
+        .phoneError{
+            color : red
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="title">ĐĂNG KÝ THÔNG TIN</div>
+        <div class="row">
+            <div class="element">
+                Tên đăng nhập :
+            </div>
+            <input type="text" class="name">
+        </div>
+        <div class="row">
+            <div class="element">
+                Mật khẩu :
+            </div>
+            <input type="password" class="password">
+        </div>
+        <div class="row">
+            <div class="element">
+                Giới tính :
+            </div>
+            <input type="radio" checked name="gt" value="male"> Nam
+            <input type="radio" name="gt" value="female"> Nữ
+        </div>
+        <div class="row">
+            <div class="element">
+                Số điện thoại :
+            </div>
+            <input type="text" class="phone">
+        </div>
+        <span class="phoneError"></span>
+        <div class="row">
+            <div class="element">
+                Giới thiệu :
+            </div>
+            <input type="text" class="intro">
+        </div>
+        <div class="button">
+            <button class="register">Đăng ký</button>
+            <button class="cancel">Hủy bỏ</button>
+        </div>
+    </div>
+    <script src="./main.js">
+    </script>
+</body>
+</html>

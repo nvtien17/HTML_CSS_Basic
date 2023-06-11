@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #errorName, #errorPassword, #errorConfirmPassword{
+        color: red;
+        font-size: 12px;
+    }
+</style>
+<body style="margin: auto; padding: auto;">
+    <div style="width: 500px; margin: auto;" onsubmit="checkLai()">
+        <form name="form">
+            <h1 style="text-align: center;">ĐĂNG KÝ THÀNH VIÊN</h1>
+            <table width="100%" cellspacing="0" >
+                <TR style="height: 36px;">
+                    <td style="vertical-align: top;">Họ và tên:</td>
+                    <td>
+                        <input type="text" name="name" placeholder="Nhập họ và tên" onblur="checkHoTen()" id="hoten"><br>
+                        <span id="errorName"></span><br />
+                    </td>
+                </TR>
+                <tr style="height: 36px;">
+                    <td style="vertical-align: top;">Mật khẩu:</td>
+                    <td>
+                        <input type="password" id="pass" onblur="checkMatKhau()"><br>
+                        <span id="errorPassword"></span><br />
+                    </td>
+                </tr>
+                <tr style="height: 36px;">
+                    <td style="vertical-align: top;">Khẳng định mật khẩu:</td>
+                    <td>
+                        <input type="password" id="repass" onblur="checkLaiMatKhau()"><br>
+                        <span id="errorConfirmPassword"></span><br />
+                    </td>
+                </tr>
+                <tr style="height: 36px;">
+                    <td style="vertical-align: top;">Ngày tháng năm sinh:</td>
+                    <td><input type="date" id="ngay"><br><br /></td>
+                </tr>
+                <tr style="height: 36px;">
+                    <td style="vertical-align: top;">Số điện thoại:</td>
+                    <td><input type="tel" id="sdt"><br><br /></td>
+                </tr>
+                <tr style="height: 36px;">
+                    <td style="vertical-align: top;">Đường dẫn ảnh:</td>
+                    <td><input type="file" multiple><br><br /></td>
+                </tr>
+                <tr style="height: 36px;">
+                    <td></td>
+                    <td style="text-align: center;">
+                    <input type="submit" value="Đăng ký" style="height: 20px; width: 60px; margin-left: 20px;">
+                    <input type="reset" value="Hủy bỏ" style="height: 20px; width: 60px;" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    <script>
+
+
+        function checkHoTen() {
+            var hoTen = document.getElementById("hoten").value;
+            var regHoTen =  /[a-zA-Z]/;
+            if (hoTen == "") {
+                document.getElementById("errorName").innerText = "Họ và tên không được để trống";
+            } else {
+                document.getElementById("errorName").innerText = "";
+                for (var i = 0; i < hoTen.length; i++) {
+                    if (!regHoTen.test(hoTen[i])) {
+                        document.getElementById("errorName").innerText = "Họ và tên không được dùng chữ số";
+                    } 
+                    else{
+                        document.getElementById("errorName").innerText = "";
+                    }
+                }
+            }
+        }
+
+        function checkMatKhau() {
+            var mk = document.getElementById("pass").value;
+            var regMK = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+            if (mk == "") {
+                document.getElementById("errorPassword").innerText = "Mật khẩu không được để trống";
+            } else {
+                document.getElementById("errorPassword").innerText = "";
+                if (!regMK.test(mk)) {
+                    document.getElementById("errorPassword").innerText = "Mật khẩu phải tồn tại ít nhất 1 chữ hoa,1 chữ thường,1 kí tự đặc biệt và 1 chữ số và tối thiểu 8 ký tự";
+                } else {
+                    document.getElementById("errorPassword").innerText = "";
+                }
+            }
+        }
+        function checkLaiMatKhau() {
+            var mk1 = document.getElementById("pass").value
+            var mk2 = document.getElementById("repass").value
+            if (mk2 == "") {
+                document.getElementById("errorConfirmPassword").innerText = "Khẳng định mật khẩu không được để trống";
+            } else {
+                document.getElementById("errorConfirmPassword").innerText = "";
+                if (mk2 != mk1) {
+                    document.getElementById("errorConfirmPassword").innerText = "Nhập lại mật khẩu sai. Hãy nhập lại";
+                } else {
+                    document.getElementById("errorConfirmPassword").innerText = "";
+                }
+            }
+        }
+
+        function checkLai() {
+            var hoTen = document.getElementById("hoten").value
+            var mk = document.getElementById("pass").value
+            var mk2 = document.getElementById("repass").value
+            var sdt = document.getElementById("sdt").value;
+            var date = document.getElementById("ngay").value;
+            if (hoTen == "" || mk == "" || mk2 == "" || sdt == "" || date == "") {
+                alert("Chưa điền hết các thông tin")
+            } else {
+                alert("Đăng ký thành công!")
+            }
+        }
+    </script>
+</body>
+</html>

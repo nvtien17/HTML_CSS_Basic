@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(true){
+            let fullname = 'tien'
+
+        }
+        var fullname = '123'
+        console.log(fullname)
+        let myString = ' Bạn Tiến tự học JS tại JS   '
+        console.log(myString.length) // chiều dài chuỗi
+        console.log(myString.indexOf("JS")) // tìm kiếm kí tự xuất hiện đầu tiên trong chuỗi và hiển thì vị tri
+        console.log(myString.indexOf("JS" , 17)) //tìm kiếm kí tự JS từ vị trí 17
+        console.log(myString.search("JS")); // tìm kiếm theo biểu thức chính quy
+        //cắt chuỗi
+        console.log(myString.slice(4,6));   //slice(vị trí bdau cat, vị trí kết thúc cắt)
+        console.log(myString.replace(/JS/g, "JavaCript"))
+        console.log(myString.toUpperCase());
+        console.log(myString.toLowerCase());
+        console.log(myString.trim());
+        //split
+        let language = 'vie, eng, tha'
+        console.log(language.split(', '))
+        console.log(myString.charAt(3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menulist{
+    display: flex;
+    background-color: rgb(29,162,97);
+}
+.menuitem{
+    list-style: none;
+
+    font-size: 18px;
+    color: white;
+    padding: 6px 20px;
+
+    text-align: center;
+    position: relative;
+}
+.menuitem:hover{
+    background-color: red;
+    color: yellow;
+}
+.menu2{
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    z-index: 21;
+}
+.item2{
+    color: white;
+    background-color: rgb(29,162,97);
+    list-style: none;
+    text-align: left;
+}
+.item2 b{
+    margin-left: 40px;
+}
+.menuitem:hover .menu2{
+    display: block;
+}
+.item2:hover{
+    background-color: red;
+    color: yellow;
+}
+#section{
+    margin: 10px 0;
+    margin-left: 50%;
+    width: 900px;
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    transform: translateX(-50%);
+}
+.title{
+    text-align: center;
+    margin: 5px 0;
+}
+.input{
+    margin: 10px 166px 10px ;
+    display: flex;
+    text-align: right;
+}
+.input input{
+    width: 350px;
+    margin-left: 30px;
+}
+.output input{
+    width: 350px;
+    margin-left: 30px;
+}
+#section button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    margin-top: 10px;
+}
+#footer{
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

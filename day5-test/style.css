@@ -11,7 +11,7 @@ html{
 }
 .header{
     display: flex;
-    height: 110 px;
+    height: 110px;
     justify-content: space-between;
 }
 .logo{
@@ -40,7 +40,7 @@ html{
 }
 .flag{
     display: flex;
-    margin-left: 160px;
+    justify-content: flex-end;
 }
 .flag img{
     width: 40px;
@@ -107,13 +107,16 @@ html{
 }
 .button{
     margin-top: 10px;
-    position: relative;
+    /* position: relative */
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
 }
 
 .button a{
     border: 1px solid black;
     padding: 5px;
-    position: absolute;
+    /* position: absolute; */
     right: 5px;
     text-decoration: none;
 }

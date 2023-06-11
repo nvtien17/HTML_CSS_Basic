@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            width: 400px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+        .row{
+            display: flex;
+            margin-top: 10px;
+        }
+        .title{
+            width: 150px;
+            margin-right: 20px;
+        }
+        .button{
+            padding: 30px;
+            text-align: center;
+        }
+        .text{
+            padding-bottom: 20px;
+        }
+        .fileError{
+            color : red;
+        }
+        .titleError{
+            color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="row">
+            <div class="title">
+                Tiêu đề
+            </div>
+            <input type="text" class="titleinput">
+        </div>
+        <span class="titleError"></span>
+        <div class="row">
+            <div class="title">
+                Người nhận
+            </div>
+            <input type="type" class="people">
+        </div>
+        <div class="row">
+            <div class="title">
+                File đính kèm
+            </div>
+            <input type="text" class="file">
+
+        </div>
+        <span class="fileError"></span>
+        <div class="row">
+            <div class="title">
+                Nội dung
+            </div>
+            <input type="text" class="text">
+        </div>
+        <div class="button">
+            <button class="send">
+                Gửi đi
+            </button>
+            <button class="cancel">
+                Hủy bỏ
+            </button>
+        </div>
+    </div>
+<script src="./main.js">
+
+</script>
+</body>
+</html>

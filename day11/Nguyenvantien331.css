@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    width: 1000px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    margin: 3px 170px;
+}
+.title{
+    width: 200px;
+}
+.register{
+    margin-left: 40%;
+}
+input{
+    width: 200px;
+}
+.error {
+    color: red;
+}

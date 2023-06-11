@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+        .col3  {
+            flex: 3;
+        }
+        .col1  {
+            flex: 1;
+        }
+        .row1 {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .row2 {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            margin: 10px -10px;
+
+        }
+        .box {
+            background-color: aqua;
+            height: 100%;
+            width: 100%;
+        }
+        .col {
+            padding: 10px;
+        }
+         /* input {
+            font-size: 24px;
+            padding: 10px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+        } */
+
+    </style>
+</head>
+    <!-- <div class="code-js">
+        <label for="">Nhap n : </label>
+        <input type="text" class="input">
+        <label for="">Ket qua</label>
+        <input type="text" class="output" disabled>
+        <button class="result">Tinh</button>
+        <button class="reset">Nhap lai</button>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col3 col">
+                <div class="row1">
+                    <div class="box"></div>
+                </div>
+                <div class="row2">
+                    <div class="col1 col">
+                        <div class="box"></div>
+                    </div>
+                    <div class="col1 col">
+                        <div class="box"></div>
+                    </div>
+                    <div class="col1 col">
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col1 col">
+                <div class="row1">
+                    <div class="box"></div>
+                </div>
+                <div class="row2">
+                    <div class="col1 col">
+                         <div class="box"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        const input = document.querySelector('.input')
+        const output = document.querySelector('.output')
+        const btnResult = document.querySelector('.result')
+        const btnReset = document.querySelector('.reset')
+
+        console.log(input, output);
+        console.log(btnResult, btnReset);
+
+        btnResult.onclick = function(){
+
+
+            if(input.value){
+ let sum = 0;
+                let n = Number(input.value)
+                for(let i = 0; i <= n; i++){
+                    sum += i;
+                }
+                console.log(sum);
+                output.value = sum
+            }
+
+        }
+        btnReset.onclick = function(){
+            input.value = ''
+            output.value = ''
+        }
+    </script>  -->
+     <!-- <div class="container">
+        <div class="row">
+            <div class="col3 col col" col>
+                <div class="box"></div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col1 col col" col>
+                 <div class="box"></div>
+            </div>
+            <div class="col1 col col" col>
+                 <div class="box"></div>
+            </div>
+            <div class="col1 col col" col>
+                 <div class="box"></div>
+            </div>
+            <div class="col1 col col" col>
+                 <div class="box"></div>
+            </div>
+        </div>
+    </div> -->
+
+</body>
+</html>

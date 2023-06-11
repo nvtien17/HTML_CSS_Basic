@@ -1,0 +1,137 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    color: #330066;
+}
+body{
+    background-color: antiquewhite;
+}
+#header img{
+    width: 100%;
+    height: 100px;
+}
+#session{
+    margin-top: 10px;
+}
+.menulist{
+    width: 250px;
+    background-color: #66ffcc;
+}
+.menuitem{
+    list-style: none;
+    padding: 10px 50px;
+    border: 1px solid black;
+    border-bottom: none;
+    position: relative;
+}
+.menuitem:last-child{
+    border-bottom: 1px solid black;
+}
+.menuitem a{
+    text-decoration: none;
+    color: #330066;
+}
+.menuitem:hover {
+    background-color: #FFCCCC;
+}
+.menu2{
+    display: none;
+    width: 200px;
+    position: absolute;
+    right:-200px;
+    top: -1px;
+    background-color: #66ffcc;
+}
+.menu2item{
+    list-style: none;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.menu2item:last-child{
+    border : 1px solid black;
+}
+.menuitem:hover .menu2{
+    display: block;
+}
+.menu2item:hover{
+    background-color: #FFCCCC;
+}
+#session{
+    display: flex;
+}
+.btn{
+    display: flex;
+    margin-left: 5px;
+}
+.btn button{
+    width: 100px;
+    margin-left: 10px;
+}
+.title{
+    background-color: #66FF66;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-right: 10px;
+}
+#content{
+    margin-left: 10px;
+    border: 1px solid #330066;
+}
+.title{
+    padding: 8px 5px;
+}
+.item{
+    width: 30%;
+    text-align: center;
+    margin: 10px;
+}
+.item img{
+    width: 170px;
+    height: 170px;
+    border: 1px solid #330066;
+}
+.content-right{
+    margin-left: 20px;
+}
+.right-top{
+    border :1px solid #330066;
+    border-radius: 10px;
+}
+.titlename{
+    background-color: #66FF66;
+    padding: 10px 5px;
+}
+.rightitem{
+    display: flex;
+}
+.rightitem img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.right-bottom{
+    border: 1px solid #330066;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.rightitem{
+    margin: 20px 5px;
+}
+.titlename{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.text{
+    padding: 20px 0;
+}
